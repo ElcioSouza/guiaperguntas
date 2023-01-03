@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Perfil do usuario</h1>
+    <!-- <%= %>  exibir valor da variavel -->
+    <h2>Nome: <%= nome %></h2>
+    <h2>Linguagem: <%= lang %></h2>
+    <h2> Empresa: <%= empresa %> </h2>
+    <h2> Inscritos: <%= inscritos %></h2>
+    <% if(msg) { %>
+        <h3>Isso é uma mensagem de erro!</h3>
+    <% } else { %>
+        <h3>Nenhum erro!</h3>
+    <% } %>
+
+    <% produtos.forEach(function(produto){%>
+        <hr>
+        <h3> <%= produto.nome %> </h3>
+        <h4> <%= produto.preco %> </h4>
+        
+    <%  })  %>
+
+    <img src="/img/img01.jpg" alt="">
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
