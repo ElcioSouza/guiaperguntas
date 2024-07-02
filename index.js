@@ -1,4 +1,4 @@
-const express = require("express"); // importei  framework express
+const express = require("express"); 
 const bodyParser = require("body-parser"); // e uma biblioteca traduzir os dados do formulario para recuperar os dados
 const conn  = require("./database/database");
 const Pergunta = require("./database/PerguntaModel")
